@@ -21,7 +21,6 @@ public class Average {
         int sum = 0;
         int i = 0;
         double average = 0;
-        double d = (double) i;
         for (i = 0; i < nums.length; i++) {
             sum += nums[i]; //iterate through nums and add to sum
             average = (double)sum/nums.length;
