@@ -8,12 +8,14 @@ public class CustomExceptionThrower {
      *
      * I recommend looking at the test case for a good example of try/catch block usage, as well.
      */
-    public void throwCustomException() throws CustomException {
-        try {
+    public static void throwCustomException() throws Exception {
+        //throw new CustomException(message: null);
+    
+    //public static void main(String[] args)
+        try{
             throwCustomException();
         } catch (CustomException e) {
-            
+            System.out.println("You didn't create an instance of the class.");
         }
     }
-
 }
