@@ -7,11 +7,13 @@ public class GetMax {
      * @return the largest value in arr.
      */
     public int max(int[] arr){
-        int i = 0;
-        Map<String, Integer> max = new HashMap<>();
-        for (i = 1; i < arr.length; i++) {
-            max.put(int[i], arr[i]);
+        int i = arr[0];
+        int maximum = arr[0];
+        for (i = 0; i < arr.length; i++) {
+            if (maximum < arr[i]) {
+                maximum = arr[i];
+            }
         }
-        return i;
+        return maximum;
     }
 }
