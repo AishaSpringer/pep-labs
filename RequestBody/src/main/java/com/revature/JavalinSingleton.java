@@ -51,7 +51,7 @@ public class JavalinSingleton {
 
                String songName = om.writeValueAsString(song);
 
-               ctx.result(song);
+               ctx.result(songName);
 
         });
 
